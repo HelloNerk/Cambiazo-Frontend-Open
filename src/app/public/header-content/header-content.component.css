@@ -1,0 +1,101 @@
+mat-toolbar{
+  background-color: #000;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  height: 8rem;
+  position: fixed;
+  z-index: 1;
+}
+/* reestablecer etiquetas */
+li{
+  list-style: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+button{
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+/********* Logo ************/
+.container-logo{
+  height: 75%;
+  align-content: center;
+}
+img{
+  height:inherit;
+}
+
+/************ Nav *********/
+.container-nav{
+  color: white;
+  font-size: 18px;
+}
+
+.container-nav ul{
+  display: flex;
+}
+
+.container-nav li:not(:last-child){
+  margin-right: 48px;
+}
+.button-register{
+  background: #ffffff;
+}
+.button-login{
+  border-color: #FFD146;
+  color: #FFD146;
+  background: inherit;
+  margin-right: 10px;
+}
+button{
+  padding: 12px 22px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+/**************** */
+.toolbar-template{
+  height:127px;
+  width: 100%;
+}
+.burger{
+  display:none;
+}
+
+.burger-content{
+  margin: 10px 20px 10px 20px;
+  display: block;
+  align-items: center;
+}
+.line{
+  margin: 5px 10px 5px 10px;
+  border: solid 1px #FFD146;
+}
+.option:hover{
+  color: #FFD146;
+}
+
+@media screen and (max-width: 1035px) {
+  .container-nav,
+  .container-button{
+    display:none;
+  }
+
+  .burger{
+    display:block;
+  }
+  .container-logo img{
+    height: 60%;
+  }
+}

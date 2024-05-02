@@ -1,0 +1,13 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="container-sidenav" mode="side">
+    <p> <button mat-flat-button routerLink="/admin">Home</button></p>
+    <p> <button mat-flat-button routerLink="/admin/users">Usuarios</button></p>
+    <p> <button mat-flat-button routerLink="/admin/memberships">Membresias</button></p>
+    <p> <button mat-flat-button routerLink="/admin/products">Objetos</button></p>
+    <p> <button mat-flat-button routerLink="/admin/products-categories">Categorias de Objetos</button></p>
+    <p> <button mat-flat-button routerLink="/admin/ongs">Ongs</button></p>
+    <p> <button mat-flat-button routerLink="/admin/ongs-categories">Categorias de Ongs</button></p>
+  </mat-drawer>
+  <button type="button" mat-button (click)="drawer.toggle()"><mat-icon>home</mat-icon></button>
+  <app-crud-ongs></app-crud-ongs>
+</mat-drawer-container>

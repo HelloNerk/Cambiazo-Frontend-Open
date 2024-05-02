@@ -1,0 +1,19 @@
+.dialog-title{
+  margin-bottom: 2rem;
+}
+
+.actions{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-form{
+  display: flex;
+  justify-content: center;
+}

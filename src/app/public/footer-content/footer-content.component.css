@@ -1,0 +1,101 @@
+
+footer{
+  background: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding:50px;
+  text-align: center;
+}
+
+.row:not(:last-child){
+  margin-bottom: 50px;
+}
+
+/*etiquetas reestablecidas*/
+li{
+  list-style: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+h2{
+  font-size: inherit;
+  font-family: inherit;
+  margin:0;
+  font-weight: inherit;
+}
+
+/*-------------------- Row 1--------------------------------------*/
+.nav{
+  display: flex;
+  justify-content: space-between;
+  color:#ffffff;
+  font-size: 22px;
+}
+
+.column{
+  height: 150px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/*--------column 1-------------*/
+.logo img{
+  width: 320px;
+}
+
+/*--------column 2-------------*/
+
+
+/*--------column 3-------------*/
+
+.socials ul{
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+/*-------------------- Row 2--------------------------------------*/
+
+.info{
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: #C2C2C2;
+}
+
+.info li:not(:last-of-type){
+  margin-right:25px;
+}
+
+/*-------------------- Row 3--------------------------------------*/
+.copy{
+  color:#FFD146;
+  font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  .row{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .column:not(:last-child){
+    margin-bottom: 40px;
+  }
+  .info li:not(:last-of-type){
+    margin-right:0;
+  }
+  .info{
+    height: 250px;
+  }
+}
+

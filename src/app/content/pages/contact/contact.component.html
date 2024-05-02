@@ -1,0 +1,50 @@
+<div class="container">
+
+  <h1 class="title">Comunícate con nosotros</h1>
+  <h2 class="title-comment">¿Como podemos Ayudarte?</h2>
+
+  <p class="introduction">
+    ¿Tienes alguna pregunta, sugerencia o comentario?<br>
+    ¡Nos encantaría escucharte!<br>
+    Completa el formulario
+    a continuación y nos pondremos en contacto contigo lo
+    antes posible. Tu opinión es importante para nosotros.
+  </p>
+
+
+  <form class="form-container">
+    <mat-form-field class="mat-form-field">
+      <mat-label><b>Nombre</b></mat-label>
+      <input matInput class="mat-input-element">
+    </mat-form-field>
+
+    <mat-form-field class="mat-form-field">
+      <mat-label><b>Correo Electronico</b></mat-label>
+      <input matInput
+             placeholder="pat@example.com"
+             [formControl]="email"
+             (blur)="updateErrorMessage()"
+             required
+             class="mat-input-element">
+      @if (email.invalid) {
+        <mat-error class="mat-error">{{errorMessage}}</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field class="mat-form-field">
+      <mat-label><b>Telefono</b></mat-label>
+      <mat-icon matSuffix>phone</mat-icon>
+      <input matInput class="mat-input-element">
+    </mat-form-field>
+
+    <mat-form-field class="mat-form-field">
+      <mat-label><b>Comentario</b></mat-label>
+      <textarea matInput class="mat-input-element"></textarea>
+    </mat-form-field>
+
+    <mat-checkbox class="mat-checkbox">Acepto la Politica de <b class="redirection">Privacidad</b> y las <b class="redirection">Condiciones de Uso</b></mat-checkbox>
+
+    <button mat-button class="button">Enviar</button>
+  </form>
+
+</div>

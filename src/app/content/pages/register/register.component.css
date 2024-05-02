@@ -1,0 +1,185 @@
+.register {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.form-container{
+  display: flow;
+  padding: 5% 20% 0 20%;
+  align-content: center;
+  justify-content: center;
+
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.img-logo{
+  width: 80%;
+}
+.button {
+  background-color: #FFD146;
+  width: 100%;
+  padding: 25px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gmail {
+  border: 1px solid #C2C2C2;
+  width: 100%;
+  border-radius: 35px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.gmail-logo-name{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+main {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+.boxB{
+  width: 100%;
+}
+.col1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff;
+
+}
+.col2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.mat-label {
+  font-weight: normal;
+}
+
+.form-container img{
+  width: 100%;
+  object-fit: contain;
+}
+.col2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.line-text{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.left, .right {
+  margin-bottom: 10px;
+  flex: 1;
+  height: 1px;
+  background-color: #C2C2C2;
+}
+.subtitle{
+  padding: 0 10px 0 10px;
+  color: #C2C2C2;
+}
+.title{
+  font-size: 30px;
+  margin: 25px 0 15px 0;
+  font-weight: bold;
+}
+.button-home{
+  position: absolute;
+  margin:1rem;
+  background-color: #FFD146;
+  border-radius: 10px;
+  height: 35px;
+  width: 35px;
+  display: flow;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.home-icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.login{
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.login a{
+  color: #FFD146;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+.accept:checked{
+  background-color: #FFD146;
+}
+.mat-input-element{
+  border: 1px solid #C2C2C2;
+  width: 95%;
+  height: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+}
+.checkbox-accept{
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  align-content: normal;
+  justify-content: normal;
+}
+.checkbox-text{
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+.checkbox-text a{
+  color: #FFD146;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media(max-width: 915px){
+  .col2 img, .col2{
+    display: none;
+  }
+
+  .login{
+    height: auto;
+  }
+
+  .form-container{
+    margin: 5rem 0 5rem 0;
+  }
+
+}

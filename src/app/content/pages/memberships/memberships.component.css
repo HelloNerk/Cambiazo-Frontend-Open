@@ -1,0 +1,131 @@
+.container{
+  padding:1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, span, div,p,li,ul{
+  font-family: inherit;
+}
+.p-1{
+  color: #FFD146;
+  font-size: 6vh;
+}
+.p-2{
+  font-size: 5vh;
+  margin-bottom: 1rem;
+}
+.p-1,.p-2{
+  font-weight: bolder;
+  margin-top:1rem;
+  text-align: center;
+  line-height: 3.5rem;
+}
+
+.p-3{
+  font-weight: bolder;
+  margin-top:1rem;
+  text-align: center;
+}
+
+.container-memberships{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+button{
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  margin-left:1rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  padding:0.5rem 2rem 0.5rem 2rem;
+}
+
+mat-card{
+  border:solid 2px #FFD146;
+  border-radius: 25px;
+  min-height:31rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.background-white{
+  background-color: #FFFFFF;
+}
+
+.background-primary{
+  background-color: #FFD146;
+}
+
+mat-card:not(last-of-type){
+  margin-right: 1rem;
+}
+
+mat-card:not(first-of-type){
+  margin-left: 1rem;
+}
+
+mat-card-actions{
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+
+mat-card-title{
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+  margin-top: 1.5rem;
+}
+.info-price{
+  font-size: 3.1vh;
+}
+
+mat-card-subtitle{
+  font-size: 3vh;
+}
+.description{
+  margin-left: 1rem;
+}
+img{
+  margin-right: 0.5rem;
+}
+mat-card-content p{
+  display: flex;
+  margin-bottom:1rem;
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .container-memberships {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  mat-card{
+    margin-bottom: 1.5rem;
+  }
+
+  mat-card-title{
+    font-size: 2.7rem;
+    margin-top: 2rem;
+
+  }
+  mat-card:not(last-of-type){
+    margin-right: 0;
+  }
+
+  mat-card:not(first-of-type){
+    margin-left: 0;
+  }
+
+}

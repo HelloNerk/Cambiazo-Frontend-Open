@@ -1,0 +1,120 @@
+mat-card{
+  height:320px;
+  width: 250px;
+  color: white;
+  display: flex;
+  flex:1;
+  margin-left: 35px;
+  background: black;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  overflow: hidden;
+
+}
+.image{
+  height:320px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  background-color: transparent;
+  position: absolute;
+
+}
+
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+.container-slider{
+  display: flex;
+  overflow: hidden;
+  width:100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.container-cards{
+  display: flex;
+  animation: 50s slide infinite linear;
+  flex-wrap: nowrap;
+  position : relative;
+}
+
+.info-card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.location{
+  display:flex;
+  justify-content: end;
+  align-content: center;
+  text-align: right;
+  margin-right:15px;
+  margin-top:10px;
+  font-weight: bold;
+}
+mat-card-header{
+  position: relative;
+  padding:0;
+  margin: 0 15px 4px 15px;
+  height: 100%;
+}
+.container-titles{
+  position: absolute;
+  bottom: 0;
+}
+
+mat-card-title{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+mat-card-content{
+  background-color: rgb(0,0,0,0.5);
+  padding:15px;
+  text-align: center;
+  margin: 0 15px 1rem 15px;
+
+}
+
+mat-card-content .p-price{
+  font-weight: bold;
+  color: #FFD146;
+}
+
+mat-card-subtitle button{
+  padding: 2.5px 10px 2.5px 10px;
+  color: #FFD146;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  border: solid 1.6px #FFD146;
+  border-radius: 25px;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+.p-info{
+  font-size: 10px;
+  line-height: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 1.5rem;
+}

@@ -1,0 +1,76 @@
+.container{
+  margin:2rem 15% 2rem 15%;
+  border-block-color: black;
+
+}
+
+.title{
+  text-align: center;
+  color: #FFD146;
+  font-weight: bolder;
+  line-height: 0.8;
+  font-size: 5rem;
+  padding:1rem;
+  display: flow;
+}
+
+.title-comment{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.introduction{
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  margin:3rem 10% 3rem 10%;
+}
+
+
+.form-container {
+  display: grid;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: #ffffff;
+  padding: 5%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 7px 0px #656565;
+}
+
+
+
+.redirection{
+  color: #FFD146;
+}
+
+.button{
+  background-color: #FFD146;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin:0 20% 0 20%;
+  padding: 20px 0 20px 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #000000;
+  color:white;
+}
+
+@media (max-width: 1000px) {
+  .title{
+    line-height: 0.8;
+    font-size: 3rem;
+
+  }
+  .container{
+    margin-right:1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+}

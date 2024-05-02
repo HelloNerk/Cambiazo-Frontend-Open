@@ -1,0 +1,38 @@
+.container, h1, h2, h3, span, div,p,section{
+  font-family: inherit;
+}
+.section-1,.section-2{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombras en los bordes */
+
+
+}
+.title{
+  text-align: center;
+  font-weight: bolder;
+
+  margin:0;
+}
+
+.subtitle{
+  margin:0;
+}
+
+.section-2 .title-boost{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-boost h3{
+  font-weight: bolder;
+
+}
+
+.section-2 p{
+  text-align: justify;
+}
+

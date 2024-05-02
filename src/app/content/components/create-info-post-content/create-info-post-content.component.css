@@ -1,0 +1,40 @@
+.container, h1, h2, h3, span, div,p,section{
+  font-family: inherit;
+}
+.section-1,.section-2{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombras en los bordes */
+
+
+}
+.title{
+  text-align: center;
+  font-weight: bolder;
+
+  margin:0;
+}
+
+.subtitle{
+  margin:0;
+}
+
+.text-area textarea{
+  resize: inherit;
+  height:8rem;
+}
+
+/***** cambia el disenio del input amount *****/
+.example-right-align {
+  text-align: right;
+}
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+input.example-right-align {
+  -moz-appearance: textfield;
+}

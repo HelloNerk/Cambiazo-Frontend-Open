@@ -1,0 +1,28 @@
+
+<div class="container">
+  <p class="p-1">¡Sé parte de nuestra comunidad premium</p>
+  <p class="p-2">y obten beneficios exclusivos para ti!</p>
+  <div class="container-memberships">
+    <mat-card *ngFor="let item of memberships; let i = index" [ngClass]="{'background-white': i % 2 === 0, 'background-primary': i % 2 !== 0}">
+      <mat-card-header>
+        <mat-card-subtitle>{{item.name}}</mat-card-subtitle>
+        <mat-card-title>
+          @if(item.price===0){
+            GRATIS
+          }
+          @else{${{item.price}}<span class="info-price">c/mes</span>}
+        </mat-card-title>
+      </mat-card-header>
+      <p class="description">{{ item.description }}</p>
+      <mat-card-actions>
+        <button>¡Empieza ahora!</button>
+      </mat-card-actions>
+      <mat-card-content>
+
+        <p *ngFor="let benefit of item.benefits"><img src="assets/images/icons/check.png" width="20vh" height="20vh" alt="icono-check">{{benefit}}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <p class="p-3">Todos nuestros planes se renuevan automáticamente
+    según el período elegido inicialmente.</p>
+</div>

@@ -1,0 +1,39 @@
+<div class="container">
+  <section class="section-1">
+
+    <h2 class="title">Informacion de tu publicacion</h2>
+
+    <h3 class="subtitle" >Categorias</h3>
+    <mat-form-field>
+      <mat-select>
+        <mat-option *ngFor="let category of categories" value="category.id">{{category.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h3 class="subtitle" >Producto</h3>
+    <mat-form-field>
+      <input matInput placeholder="Producto">
+    </mat-form-field>
+
+    <h3 class="subtitle" >Describe tu producto</h3>
+    <mat-form-field class="text-area">
+      <mat-label>Textarea</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+
+    <h3 class="subtitle" >¿Que quieres a Cambio?</h3>
+    <mat-form-field class="text-area">
+      <mat-label>Textarea</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+
+
+    <h3 class="subtitle" >Valor Aproximado</h3>
+    <mat-form-field floatLabel="always">
+      <input matInput type="number" class="example-right-align" placeholder="0">
+      <span matTextPrefix>S/&nbsp;</span>
+    </mat-form-field>
+
+  </section>
+
+</div>

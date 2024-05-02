@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="search-posts-content.component.css">
+<div class="container-search">
+  <mat-form-field class="form-content">
+    <div class="search-wrapper">
+      <mat-icon class="search-icon" style="color: #FFD146">search</mat-icon>
+      <input matInput placeholder="Buscar..." required class="search-input">
+    </div>
+  </mat-form-field>
+</div>
+<div class="container-categories">
+  <div class="box-categories">
+    <button mat-button class='chip-category' *ngFor="let category of categories">{{category.name}}</button>
+  </div>
+</div>

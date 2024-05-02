@@ -1,0 +1,26 @@
+<div class="container">
+  <mat-form-field class="form-content">
+    <div class="search-wrapper">
+      <mat-icon class="search-icon">search</mat-icon>
+      <input matInput placeholder="Buscar..." required class="search-input" (input)="searchOngs($event)">
+    </div>
+  </mat-form-field>
+
+  <h1>ONGs</h1>
+
+  <mat-card *ngFor="let item of items">
+
+    <img src="{{item.logo}}" alt="imagen-logo">
+    <mat-card-header>
+      <mat-card-subtitle>{{item.name}} </mat-card-subtitle>
+      <mat-card-title>{{item.type}}</mat-card-title>
+      <p>{{item.address.district}}, {{item.address.city}}</p>
+    </mat-card-header>
+
+    <!--<mat-card-actions>
+      <p>{{item.address.district}}, {{item.address.city}}</p>
+      <button mat-raised-button >Detalle</button>
+    </mat-card-actions>-->
+  </mat-card>
+
+</div>

@@ -1,0 +1,52 @@
+.container{
+  margin:2rem 20% 2rem 20%;
+}
+
+.title{
+  text-align: center;
+  color: #FFD146;
+  font-weight: bolder;
+  line-height: 4rem;
+  font-size: 4rem;
+  padding:1rem;
+}
+
+.title-comment{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.subtitle{
+  color: #FFD146;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.introduction{
+  text-align: center;
+}
+
+p,li{
+  text-align: justify;
+}
+
+li{
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+  .container{
+    margin:2rem 10% 2rem 10%;
+  }
+
+  .title{
+    padding:0;
+    font-size: 3rem;
+  }
+
+}
+
+
+
+

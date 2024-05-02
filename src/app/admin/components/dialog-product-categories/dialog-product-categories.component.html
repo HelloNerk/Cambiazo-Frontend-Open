@@ -1,0 +1,22 @@
+<div class="container">
+  <div mat-dialog-title class="dialog-title">
+    @if(!this.data){Crea una nueva categoria de productos}
+    @if(this.data){Cambia la categoria de producto}
+  </div>
+
+  <form [formGroup]="categoryForm" (ngSubmit)="addProductCategory()">
+    <div mat-dialog-content class="container-form">
+      <mat-form-field>
+        <mat-label>Nombre Categoria</mat-label>
+        <input matInput  formControlName="name">
+      </mat-form-field>
+    </div>
+
+
+    <div mat-dialog-actions class="actions">
+      <button mat-raised-button color="primary" type="submit">Guardar</button>
+      <button mat-raised-button color="warn" type="button" (click)="onCancel()">Cancelar</button>
+    </div>
+
+  </form>
+</div>

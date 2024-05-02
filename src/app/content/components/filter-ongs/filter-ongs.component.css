@@ -1,0 +1,60 @@
+.filter-section{
+  background:#FFFFFF;
+  padding: 1.5rem;
+  border:solid 2px rgb(0,0,0,0.1);
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+mat-form-field,ng-container, p,mat-checkbox,h4 {
+  font-family: inherit;
+}
+
+
+.form-content{
+  width:100%;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+
+.search-icon {
+  margin-right: 8px;
+}
+
+
+
+.button-submit{
+  justify-self: center;
+  background: #FFD146;
+  border-radius: 20px;
+  width: 100%;
+  margin-top:4rem;
+}
+
+hr{
+  border: solid 1px rgba(0,0,0,0.1);
+}
+
+
+@media(max-width: 1000px) {
+
+  .filter-section{
+    width: 32rem;
+  }
+}
+
+@media(max-width: 650px) {
+  .filter-section{
+    width:80%;
+  }
+}
